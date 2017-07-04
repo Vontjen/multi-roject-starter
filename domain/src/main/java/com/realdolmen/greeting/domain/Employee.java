@@ -5,6 +5,11 @@ import java.io.Serializable;
 import org.hibernate.validator.constraints.Email;
 import org.hibernate.validator.constraints.NotBlank;
 
+/**
+ * this is a Class to generate Employee objects
+ * @author Tjen Dekekr
+ * @version 1.0
+ */
 public class Employee implements Serializable {
 	@NotBlank
 	private String firstName;
@@ -53,7 +58,4 @@ public class Employee implements Serializable {
 	public String toString() {
 		return "Employee [firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + "]";
 	}
-	
-	
-
 }
